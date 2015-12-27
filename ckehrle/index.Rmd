@@ -7,7 +7,7 @@ framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : []            # {mathjax, quiz, bootstrap}
-mode        : selfcontained # {standalone, draft}
+mode        : standalone  # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
@@ -19,27 +19,18 @@ to check if an athelete in fitness, bodybuilding or any other sports is training
 --- .class #id 
 
 ## Meaning of FFMI
+The FFMI is a measure for the mass of muscles of human body. Its based on the height, the weight and the percentage of body fat.Other than the BMI ( Body Mass Index) the FFMI respects the amount of existing mass of muscles in the body.One important point is that looking at it from a genetic potential point of view a FFMI of 25 is considered as theorectic maxmimum which is achievable with normal training parameters. Any values above 25 is considered as an indication of usage of anabolic steroids.
 
-The FFMI is a measure for the mass of muscles of human body. Its based on the height, the weight and the percentage of body fat. 
-other than the BMI ( Body Mass Index) the FFMI respects the amount of existing mass of muscles in the body.
-
-One important point is that looking at it from a genetic potential point of view a FFMI of 25 is considered as theorectic maxmimum which is achievable with normal training parameters. Any values above 25 is considered as an indication of usage of anabolic steroids.
-
---- .class #id 
-
-## Formula
-
+### Formula
 The FFMi is calucated by the base values height, weight and body fat percentage.
-
+ 
  FFMI = FFM / (G x G) + 6,3 x (1,8 - G)
  FFM = KG * (100 - KFA) / 100
  
- with
-   FFMI Fat Free MAss Index
-   FFM  Fat Free Mass
-   KG   Weight in kilogram
-   G    Height in meter
-   KAF  Body Fat Percentage
+* FFM  Fat Free Mass
+* KG   Weight in kilogram
+* G    Height in meter
+* KAF  Body Fat Percentage
 
 --- .class #id 
 
