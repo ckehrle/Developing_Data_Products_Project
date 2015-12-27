@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fat Free Mass Index</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Fat Free Mass Index">
+  <meta name="author" content="c.Kehrle">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Fat Free Mass Index</h1>
+    <h2>An app to check if athelets are in natural parameters or using illegal supplements</h2>
+    <p>c.Kehrle<br/>yes, have one</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>The challenge</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>to check if an athelete in fitness, bodybuilding or any other sports is training cleanly or is there a hint for anabolic steroids supplementation.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Meaning of FFMI</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The FFMI is a measure for the mass of muscles of human body. Its based on the height, the weight and the percentage of body fat. 
+other than the BMI ( Body Mass Index) the FFMI respects the amount of existing mass of muscles in the body.</p>
+
+<p>One important point is that looking at it from a genetic potential point of view a FFMI of 25 is considered as theorectic maxmimum which is achievable with normal training parameters. Any values above 25 is considered as an indication of usage of anabolic steroids.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Formula</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The FFMi is calucated by the base values height, weight and body fat percentage.</p>
+
+<p>FFMI = FFM / (G x G) + 6,3 x (1,8 - G)
+ FFM = KG * (100 - KFA) / 100</p>
+
+<p>with
+   FFMI Fat Free MAss Index
+   FFM  Fat Free Mass
+   KG   Weight in kilogram
+   G    Height in meter
+   KAF  Body Fat Percentage</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>sample calucation</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Some sample calucation of FFMI.</p>
+
+<pre><code class="r">ffmi &lt;- function(h,w,kfa){ 
+  h &lt;-h/100
+  round((w*(100-kfa)/100)/(h*h)+6.3*(1.8- h))}
+
+result &lt;-ffmi(180,80,10)
+
+print(result)
+</code></pre>
+
+<pre><code>## [1] 22
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>FFMI App</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The App lets you easily calucate the FFMI. Go the <a href="https://github.com/ckehrle/Developing_Data_Products_Project">app website</a> and enter your height and weight and the application will determine your fat free mass index</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='The challenge'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Meaning of FFMI'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Formula'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='sample calucation'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='FFMI App'>
+         5
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
