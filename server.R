@@ -1,5 +1,4 @@
 library(shiny)
-# Functions needed to get height in inches and BMI to 2 decimal places
 ffmi <- function(h,w,kfa){ 
   h <-h/100
   round((w*(100-kfa)/100)/(h*h)+6.3*(1.8- h))}
@@ -11,7 +10,7 @@ ffmistatus <- function(ffmi){
   }
   return(status)
 }
-# Define server logic required to calculate BMI
+# Define server logic required to calculate FFMI
 shinyServer(function(input, output) {
   output$heightsummary <- renderText({paste0("Height: ",input$height," cm")
   })

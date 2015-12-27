@@ -19,15 +19,12 @@ shinyUI(fluidPage(
                   h3('Height'),
                   numericInput("height", label = h4("cm"),max=220,min=2, value = 175),
                   h3('Weight'),
-                  #     This is some code that if I wanted to use a slider instead of text input 
-                  #      sliderInput(inputId = "wlbs", label = h4("pounds"),
-                  #                  min = 50, max = 350, value = 165)
                   numericInput("wkg", label = h4("kilograms"),max=350,min=15, value = 80),
                   h3('Body fat'),
                   numericInput("kfa", label = h4("%"),max=60,min=2, value = 10),
                   submitButton('Calculate FFMI')
                 ),
-                # Show the data entered and the calculated BMI
+                # Show the data entered and the calculated FFMI
                 mainPanel(
                   # plotOutput("distPlot")
                   h3('You entered the following information:'),
